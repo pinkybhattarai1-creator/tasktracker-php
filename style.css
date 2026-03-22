@@ -1,0 +1,99 @@
+/* ===== Pastel Brown Theme ===== */
+:root{
+  --bg1: #fff8f1;        /* นม/ครีม */
+  --bg2: #f3e8dc;        /* เบจ */
+  --bg3: #e7d6c7;        /* คาปูชิโน่ */
+  --accent: #c89f7a;     /* คาราเมล */
+  --accent2: #a67c52;    /* น้ำตาลอ่อน */
+  --text: #3c2f2f;       /* น้ำตาลเข้มสำหรับตัวอักษร */
+  --muted: #7a635a;
+}
+
+body{
+  color: var(--text);
+  background:
+    radial-gradient(1200px 520px at 10% 10%, rgba(200,159,122,.22), transparent 60%),
+    radial-gradient(1200px 520px at 90% 20%, rgba(231,214,199,.30), transparent 55%),
+    linear-gradient(180deg, var(--bg1), var(--bg2));
+}
+
+/* Navbar */
+.navbar{
+  background: linear-gradient(90deg, rgba(200,159,122,.18), rgba(231,214,199,.32)) !important;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(60,47,47,.08);
+}
+.navbar-brand b{ letter-spacing: .3px; }
+.navbar .btn{ border-radius: 999px; }
+
+/* Cards */
+.card{
+  border: 1px solid rgba(60,47,47,.07);
+  border-radius: 18px;
+  box-shadow: 0 12px 34px rgba(60,47,47,.10);
+}
+.card .card-title{ font-weight: 800; }
+
+/* Buttons */
+.btn{
+  border-radius: 12px;
+  font-weight: 700;
+}
+.btn-primary{
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  border: 0;
+}
+.btn-success{
+  background: linear-gradient(90deg, #b08968, #d4b293);
+  border: 0;
+}
+.btn-warning{
+  background: linear-gradient(90deg, #e3c39d, #d7ad7f);
+  border: 0;
+  color: #3c2f2f;
+}
+.btn-danger{
+  background: linear-gradient(90deg, #c97b63, #e09f8c);
+  border: 0;
+}
+
+/* Inputs */
+.form-control, .form-select{
+  border-radius: 12px;
+  border: 1px solid rgba(60,47,47,.12);
+  background: rgba(255,255,255,.75);
+}
+.form-control::placeholder{ color: rgba(122,99,90,.70); }
+.form-control:focus, .form-select:focus{
+  border-color: rgba(166,124,82,.55);
+  box-shadow: 0 0 0 .25rem rgba(200,159,122,.22);
+}
+
+/* Tables */
+.table{
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(60,47,47,.08);
+}
+.table thead th{
+  background: linear-gradient(90deg, rgba(200,159,122,.20), rgba(231,214,199,.40));
+  border-bottom: 0;
+}
+.table td, .table th{ vertical-align: middle; }
+
+/* Status badges */
+.badge-soft{
+  padding: .45rem .7rem;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: .82rem;
+}
+.badge-todo{ background: rgba(200,159,122,.22); color: #7a4f2a; }
+.badge-done{ background: rgba(176,137,104,.22); color: #5a3e2b; }
+
+/* Hero image */
+.hero{
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 34px rgba(60,47,47,.12);
+}
