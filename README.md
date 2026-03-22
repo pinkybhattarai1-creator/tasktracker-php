@@ -95,7 +95,7 @@ CREATE TABLE tasks (
 - Login page
 - Dashboard page
 - Add task form
-- Task list page
+  
 
 
 ## 🎯 Purpose of the Project
